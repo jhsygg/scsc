@@ -1,0 +1,8 @@
+clear all;close all;clc;
+[ndata,text,alldata]=xlsread('F:\RAM-XH-SG\RAM-450-new','sheet1');%读取计算数据
+
+
+BH=alldata(:,23);
+BH1=BH(6:1078);
+
+s=xlswrite('F:\RAM-XH-SG\RAM-450-YB1',BH1,'sheet1','C2:C1078');
